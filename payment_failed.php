@@ -1,0 +1,3 @@
+<?php
+require_once __DIR__.'/includes/db.php';require_login();if($_SERVER['REQUEST_METHOD']==='POST')verify_csrf();
+?><!doctype html><html lang="gu"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="assets/style.css"><title>Payment Not Completed</title></head><body><main class="form-wrap"><div class="panel"><h1>Payment પૂર્ણ થયું નથી</h1><p>Order Paid mark થયો નથી. ફરી પ્રયાસ કરો.</p><p class="notice">જો Razorpayમાં payment success દેખાય, તો status તપાસ્યા વગર ફરી ચુકવણી ન કરો.</p><a class="btn" href="pay.php">ફરી પ્રયાસ</a> <a href="track.php">Track Order</a></div></main></body></html>
